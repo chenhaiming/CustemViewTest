@@ -5,44 +5,72 @@
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.chm.zf.custemview.MainActivity">
 
-    <com.chm.zf.weidget.viewg.MyViewGroup
+    <!--<com.chm.zf.weidget.viewg.MyViewGroup-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--style="@style/text_flag_01"-->
+    <!--android:text="Welcome" />-->
+
+    <!--<TextView-->
+    <!--style="@style/text_flag_01"-->
+    <!--android:text="IT工程师" />-->
+
+    <!--<TextView-->
+    <!--style="@style/text_flag_01"-->
+    <!--android:text="学习ing" />-->
+
+    <!--<TextView-->
+    <!--style="@style/text_flag_01"-->
+    <!--android:text="恋爱ing" />-->
+
+    <!--<TextView-->
+    <!--style="@style/text_flag_01"-->
+    <!--android:text="挣钱ing" />-->
+
+    <!--<TextView-->
+    <!--style="@style/text_flag_01"-->
+    <!--android:text="努力ing" />-->
+
+    <!--<TextView-->
+    <!--style="@style/text_flag_01"-->
+    <!--android:text="I thick i can" />-->
+
+    <!--</com.chm.zf.weidget.viewg.MyViewGroup>-->
+
+    <!--<com.chm.zf.weidget.StatisticsView-->
+    <!--android:id="@+id/stat"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="250dp"-->
+    <!--app:title="七日学习情况(单位 节)" />-->
+
+
+    <com.chm.zf.weidget.CouponDisplayView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="200dp"
+        app:backres="@android:color/holo_blue_bright"
+        app:gat="10dp"
+        app:radius="10dp">
+    </com.chm.zf.weidget.CouponDisplayView>
 
-        <TextView
-            style="@style/text_flag_01"
-            android:text="Welcome" />
+    <Button
+        android:id="@+id/open"
+        android:text="open others"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-        <TextView
-            style="@style/text_flag_01"
-            android:text="IT工程师" />
-
-        <TextView
-            style="@style/text_flag_01"
-            android:text="学习ing" />
-
-        <TextView
-            style="@style/text_flag_01"
-            android:text="恋爱ing" />
-
-        <TextView
-            style="@style/text_flag_01"
-            android:text="挣钱ing" />
-
-        <TextView
-            style="@style/text_flag_01"
-            android:text="努力ing" />
-
-        <TextView
-            style="@style/text_flag_01"
-            android:text="I thick i can" />
-    </com.chm.zf.weidget.viewg.MyViewGroup>
-
-
+    <com.chm.zf.weidget.RoundMenu
+        android:id="@+id/rsv_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+ />
 </LinearLayout>

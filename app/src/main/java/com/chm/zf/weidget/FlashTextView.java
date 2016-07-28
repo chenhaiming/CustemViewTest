@@ -73,7 +73,7 @@ public class FlashTextView extends TextView {
         mTranslate = this.getLeft();
         //绘制字体之前
         //我们在这里绘制外矩形
-        canvas.drawRect(0, 0, getMeasuredWidth(), getMeasuredHeight(), mPaint1);
+//        canvas.drawRect(0, 0, getMeasuredWidth(), getMeasuredHeight(), mPaint1);
         //绘制内矩形
         canvas.drawRect(5, 5, getMeasuredWidth() - 5, getMeasuredHeight() - 5, mPaint2);
         //绘制字体之前向右平移5像素
